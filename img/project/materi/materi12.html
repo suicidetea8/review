@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Materi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Review Materi</h1>
+    </header>
+
+    <section class="review-section">
+        <article>
+            <h2>POINTER</h2>
+            <p class="author-date">Ditulis oleh: Setiana April | Tanggal: 14 Februari 2024</p>
+            
+            <div class="content">
+                <p>
+                   <b>PENGERTIAN</b>  <br><br>
+                   Suatu variabel yang berisi alamat memori sebagai nilainya.
+<br>
+                   Merupakan variabel level rendah yang dapat digunakan untuk menunjuk nilai integer, character, float, double, atau single dan tipe-tipe data lain yang didukung oleh bahasa pemrograman.
+                   <br><br>
+                   
+                   
+                  <b>FUNGSI POINTER</b> 
+                   <br>
+                   Meningkatkan kinerja untuk operasi yang dilakukan secara berulang, karena variabel pointer bersifat dinamis (dapat diubah-ubah lokasi penyimpannya dalam memory).
+                   <br>
+                   Pada variabel biasa kita tidak perlu tahu alamat memory dari variabel tersebut. Untuk mengakses hanya perlu nama variabel tersebut. Tapi untuk struktur data dinamis (linked list, tree dsb) hal tersebut tidak bisa.
+                   <br><br>
+                   
+                   
+                   <b>DEREFERENCING POINTER</b>
+                   <br><br>
+                   Adalah mengambil nilai yang ditunjuk oleh sebuah variabel pointer .
+                   <br>
+                   Untuk melakukan dereferencing pointer, kita harus menggunakan simbol *. Bila p adalah pointer, maka *p adalah nilai yang ditunjuk oleh p.
+                   
+                   <br>
+                   
+                   Terdapat 3 operasi yaitu sebagai berikut
+                   <br><br>
+                   1. OPERASI POINTER
+                   <br><br>
+                     a. Operasi Penugasan
+                   <br><br>
+                       Nilai dari suatu variabel pointer dapat  disalin ke variabel pointer yang lain.
+                   <br><br>
+                       Contoh:
+                   <br><br>
+                       y = 65;
+                   <br><br>
+                       x₁ = &y;
+                   <br><br>
+                       X₂ = x1;
+                       <br><br>
+                   b. Operasi Aritmatika
+                   <br><br>
+                       Suatu variabel pointer hanya dapat dilakukan operasi aritmatika dengan nilai integer saja.
+                       <br>
+                      Operasi penambahan dengan suatu nilai       menunjukkan lokasi data berikutnya             (index selanjutnya) dalam memori.
+                      <br><br>
+                   c. Operasi Logika
+                   <br><br>
+                   Atau disebut operasi perbandingan.
+                   <br>
+                   Pointer dapat dibandingkan dengan menggunakan operator hubungan, seperti !=, ==, <, dan >.
+                   <br><br>
+                   Contoh: <br>
+                   {
+                    <br><br>
+                   int num[4];
+                   <br><br>
+                   int *start, *end;
+                   <br><br>
+                   start = num;
+                   <br><br>
+                   end = &num[3];
+                   <br><br>
+                   while (start != end)
+                   <br><br>
+                   }
+                   <br><br>
+                  <b>POINTER DAN ARRAY</b> 
+                  <br><br>
+                   Array secara internal akan diterjemahkan dalam bentuk pointer.
+                   <br>
+                   „Deklarasi variabel:
+                   <br><br>
+                     int tgl_lahir[3] = { 01, 09, 64 };
+                     <br><br>
+                     int *ptgl;
+                     <br><br>
+                   Kemudian diberi instruksi:
+                   <br><br>
+                     ptgl = &tgl_lahir[0]; 
+                     <br><br>
+                   maka ptgl akan berisi alamat dari elemen array tgl_lahir yang berindeks nol. 
+                   
+                   <br><br>
+                   
+                  <b>POINTER DAN STRING</b> 
+                   <br><br>
+                   Pointer juga dapat digunakan untuk mendeklarasikan variabel string.
+                   <br>
+                   „Contoh:
+                   <br><br>
+                    char *pkota = “SEMARANG”; 
+                    <br><br>
+                     Hampir sama dengan:
+                     <br><br>
+                    char kota[] = “SEMARANG”;
+                    <br><br>
+                    Tetapi sebenarnya tidak tepat sama. 
+                    <br>
+                    kota adalah pointer (menyatakan alamat)   yang menunjuk 
+                    <br>
+                     ke string “SEMARANG”, kota adalah array (array 
+                     <br>
+                    menyatakan alamat yang konstan, tak dapat diubah).
+                    <br><br><br>
+                </p>
+            </div>
+        </article>
+
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Review Materi by Setiana April</p>
+    </footer>
+
+</body>
+</html>

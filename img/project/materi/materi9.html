@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Materi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Review Materi</h1>
+    </header>
+
+    <section class="review-section">
+        <article>
+            <h2>GRAPH</h2>
+            <p class="author-date">Ditulis oleh: Setiana April | Tanggal: 28 Januari 2024</p>
+            
+            <div class="content">
+                <p>
+                   <b>PENGERTIAN</b>  <br><br>
+
+                    Graph adalah jenis struktur data umum yang susunan datanya tidak berdekatan satu sama lain (non-linier). Graph terdiri dari kumpulan simpul berhingga untuk menyimpan data dan antara dua buah simpul terdapat hubungan saling keterkaitan. Simpul pada graph disebut dengan verteks (V), sedangkan sisi yang menghubungkan antar verteks disebut edge (E). Pasangan (x,y) disebut sebagai edge, yang menyatakan bahwa simpul x terhubung ke simpul y.
+                    <br><br>
+                    <b>JENIS JENIS GRAPH</b>
+                    <br>
+                    ·         Sebuah graph mungkin hanya terdiri dari satu simpul
+                    <br>
+                    ·         Sebuah graph belum tentu semua simpulnya terhubung dengan busur
+                    <br>
+                    ·         Sebuah graph mungkin mempunyai simpul yang tak terhubung dengan simpul yang lain
+                    <br>
+                    ·         Sebuah graph mungkin semua simpulnya saling berhubungan
+                    <br>
+                    ·         Graph tak berarah (undirected graph atau non-directed graph) :
+                    <br>
+                    ·         Urutan simpul dalam sebuah busur tidak dipentingkan. Mis busur e1 dapat disebut busur AB atau BA
+                    <br>
+                     
+                    
+                    ·         Graph berarah (directed graph) :
+                    <br>
+                    ·         Urutan simpul mempunyai arti. Mis busur AB adalah e1 sedangkan busur BA adalah e8.
+                    <br>
+                    ·         Graph Berbobot (Weighted Graph)
+                    <br>
+                    ·         Jika setiap busur mempunyai nilai yang menyatakan hubungan antara 2 buah simpul, maka busur tersebut dinyatakan memiliki bobot.
+                    <br>
+                    ·         Bobot sebuah busur dapat menyatakan panjang sebuah jalan dari 2 buah titik, jumlah rata-rata kendaraan perhari yang melalui sebuah jalan, dll.
+                    <br><br>
+                    <b>ISTILAH PADA GRAPH</b>
+                    <br>
+                    <b>Incident</b>
+                    <br>
+                     Jika e merupakan busur dengan simpul-simpulnya adalah v dan w yang ditulis e=(v,w), maka v dan w disebut “terletak” pada e, dan e disebut incident dengan v dan w.
+                     <br>
+                     
+                    
+                    <b>Degree (derajat), indegree dan outdegree</b>
+                    <br>
+                     Degree sebuah simpul adalah jumlah busur yang incident dengan simpul tersebut.
+                     <br>
+                     
+                    
+                    <b>Indegree</b> sebuah simpul pada graph berarah adalah jumlah busur    yang kepalanya incident dengan simpul tersebut, atau jumlah busur yang “masuk” atau menuju simpul tersebut.
+                    <br>
+                     
+                    
+                    <b>Outdegree</b> sebuah simpul pada graph berarah adalah jumlah busur yang ekornya incident dengan simpul tersebut, atau jumlah busur yang “keluar” atau berasal dari simpul tersebut.
+                    <br>
+                    <b>Adjacent</b>
+                    <br>
+                                Pada graph tidah berarah, 2 buah simpul disebut adjacent bila ada busur yang menghubungkan kedua simpul tersebut. Simpul v dan w disebut adjacent.
+                    <br>
+                    <b>Successor dan Predecessor</b>
+                    <br>
+                                Pada graph berarah, bila simpul v adjacent dengan simpul w, maka simpul v adalah successor simpul w, dan simpul w adalah predecessor dari simpul v.
+                    <br>
+                    <b>Path</b>
+                    <br>
+                                Sebuah path adalah serangkaian simpul-simpul yang berbeda, yang adjacent secara berturut-turut dari simpul satu ke simpul berikutnya.
+                    
+                     <br><br>
+                    
+                   <b> Karakteristik Graph</b>
+                    <br>
+                    Graph memiliki beberapa karakteristik sebagai berikut:
+                    <br>
+                     
+                    
+                    ·         Jarak maksimum dari sebuah simpul ke semua simpul lainnya dianggap sebagai eksentrisitas dari simpul tersebut.
+                    <br>
+                    ·         Titik yang memiliki eksentrisitas minimum dianggap sebagai titik pusat dari graph.
+                    <br>
+                    ·         Nilai eksentrisitas minimum dari semua simpul dianggap sebagai jari-jari dari graph terhubung.
+                    <br><br>
+                    <b>Fungsi dan Kegunaan Graph</b>
+                    <br><br>
+                    Fungsi dan kegunaan graph di antaranya:
+                    <br>
+                    ·         Graph digunakan untuk merepresentasikan aliran komputasi.
+                    <br>
+                    ·         Digunakan dalam pemodelan grafik.
+                    <br>
+                    ·         Graph dipakai pada sistem operasi untuk alokasi sumber daya.
+                    <br>
+                    ·         Google maps menggunakan graph untuk menemukan rute terpendek.
+                    <br>
+                    ·         Graph digunakan dalam sistem penerbangan untuk optimasi rute yang efektif.
+                    <br>
+                    ·         Pada state-transition diagram, graph digunakan untuk mewakili state dan transisinya.
+                    <br>
+                    ·         Di sirkuit, graph dapat digunakan untuk mewakili titik sirkuit sebagai node dan kabel sebagai edge.
+                    <br>
+                    ·         Graph digunakan dalam memecahkan teka-teki dengan hanya satu solusi, seperti labirin.
+                    <br>
+                    ·         Graph digunakan dalam jaringan komputer untuk aplikasi Peer to peer (P2P).
+                    <br>
+                    ·         Umumnya graph dalam bentuk DAG (Directed acyclic graph) digunakan sebagai alternatif blockchain untuk cryptocurrency. Misalnya crypto seperti ETHERIUM
+                    <br><br><br>
+                </p>
+            </div>
+        </article>
+
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Review Materi by Setiana April</p>
+    </footer>
+
+</body>
+</html>
